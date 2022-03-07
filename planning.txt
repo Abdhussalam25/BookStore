@@ -1,0 +1,76 @@
+
+================================BOOKSTORE=================================
+1. Create a simple webproject
+2.convert into to maven project
+3.create remote repository
+4.generate new token
+5.push all the changes to remote
+6.)create model package
+7) a) class -- BOOK 
+      private Long bookId; 
+      private String subject; 
+      private String title;
+      private String author;
+      private String publication;
+      private Date edition   id, title, subject, author and price
+      private float price
+      
+      getters and setters
+      
+    b) class -- Customer
+    
+    
+    
+      
+      Create a bean class called Book having all required setters and getters.
+8) Use Hibernate to connect with database
+9) Create BookDao -- Interface
+  
+     
+      List<Book> addBook(Book book); 
+      Book updateBook(int qty, float price);
+      List<Book>removeOldBooks();
+      List<Book>availableBooks(String subject);
+      List<Book>availableBooks(String author);
+      List<Book>availableBooks(float price);
+      Book findBookByID(long id);
+      Book findBookBysubject(long id);
+      Book availableCheckParticularCount();      
+      List<Book>booksToBeOrdered();
+      saleReportOnDate(Date date);
+       saleReportOnDate(Date date1, Date date2);
+       List<Book> bookQuantityReportBySubject();
+       
+      
+10 )BookDaoImplClass -- Which implements above methods
+    
+11)Controllers
+ BookController
+ LoginController
+
+12) Create web pages -- Login  LoginController
+13) 
+       
+      ======================================= 
+      
+   
+      
+      
+      
+      
+      
+      
+      
+      
+	
+	
+	
+  
+  
+ 
+   
+      
+      
+      
+        
+    

@@ -1,1 +1,34 @@
-  sime
+  // creatiing databse
+  create database cyberinfomines_bookstore;
+  
+  //admin table creation
+ create table admin_table(
+user_id integer(4) primary key auto_increment,
+user_name varchar(20),
+password varchar(10) );
+
+// Admin table single entry
+
+    insert into admin_table values(101, 'admin','admin123');
+    
+    
+    
+    Hibernate: 
+    create table book (bookId bigint not null, author varchar(255), 
+    edition varchar(255), price float not null, publication varchar(255), 
+    subject varchar(255), title varchar(255),
+     primary key (bookId)) engine=InnoDB
+    
+     Hibernate: 
+    insert into book (author, edition, price, publication, subject, title, bookId) values (?, ?, ?, ?, ?, ?, ?)
+    
+       
+       create table Customer (customerId integer not null, address varchar(255), 
+       age varchar(255), email varchar(255), firstName varchar(255),
+        gender varchar(255), lastName varchar(255), password varchar(255), 
+        phoneNumber varchar(255), primary key (customerId)) engine=InnoDB
+        
+        
+        insert into Customer 
+        (address, age, email, firstName, gender, lastName, password, phoneNumber, customerId) 
+        values (?, ?, ?, ?, ?, ?, ?, ?, ?)
